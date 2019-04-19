@@ -1,0 +1,40 @@
+.home-panel{
+    vertical-align: center; 
+    font-size: 20;
+    margin: 15;
+}
+
+.description-label{
+    margin-bottom: 15;
+}
+.edit-button {
+    color: #395469;
+    background-color: #FFFFFF;
+    background-image: url("https://static.thenounproject.com/png/89031-200.png");
+    background-repeat: no-repeat;
+    background-position: 35 28;
+    background-size: 50 50;
+    border-width: 1;
+    border-color: #395469;
+    border-radius: 100;
+    height: 51;
+    font-size: 16;
+  }
+  .delete-button {
+    color: #395469;
+    background-color: #FFFFFF;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/e-business-helper/240/627249-delete3-512.png");
+    background-repeat: no-repeat;
+    background-position: 35 28;
+    background-size: 50 50;
+    border-width: 1;
+    border-color: #395469;
+    border-radius: 100;
+    height: 51;
+    font-size: 16;
+  }
+  SearchBar{
+    width: 100%;
+    background-color: red;
+
+}

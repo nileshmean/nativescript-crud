@@ -1,0 +1,30 @@
+<!-- <ScrollView sdkExampleTitle sdkToggleNavButton>
+    <GridLayout class="page" rows="auto, auto, auto, auto, auto, auto, auto, auto, auto" columns="*, 2*">
+        <Label class="p-15" row="0" col="0" text="Host" textWrap="true"></Label>
+        <Label class="p-15" row="1" col="0" text="User-Agent" textWrap="true"></Label>
+        <Label class="p-15" row="2" col="0" text="Origin" textWrap="true"></Label>
+        <Label class="p-15" row="3" col="0" text="Url" textWrap="true"></Label>
+
+        <Label class="p-15" row="0" col="1" [text]="host" textWrap="true"></Label>
+        <Label class="p-15" row="1" col="1" [text]="userAgent" textWrap="true"></Label>
+        <Label class="p-15" row="2" col="1" [text]="origin" textWrap="true"></Label>
+        <Label class="p-15" row="3" col="1" [text]="url" textWrap="true"></Label>
+    </GridLayout>
+</ScrollView>  -->
+<ActionBar title="Home" class="action-bar">
+    hi
+</ActionBar>
+
+<GridLayout>
+	<ScrollView class="page">
+		<ListView [items]="_batches" (itemTap)="onItemTap($event)" class="list-group">
+			<ng-template let-comment="item" let-i="index" let-odd="odd" let-even="even">
+				<!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+				<StackLayout orientation="horizontal" class="list-group-item">
+					<Label text="Country: " textWrap="true"></Label>
+					<Label [text]="comment.title"></Label>
+				</StackLayout>
+			</ng-template>
+		</ListView>
+	</ScrollView>
+</GridLayout>
